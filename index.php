@@ -60,7 +60,7 @@ if(isset($_POST["login"]))
             <input type="text" name="username" class="form-control" />
             <br />
             <label>Enter Password</label>
-            <input type="text" name="password" class="form-control" />
+            <input type="password" name="password" class="form-control" />
             <br />
             <input type="submit" name="login" value="Login" class="btn btn-info" />
             <br />
