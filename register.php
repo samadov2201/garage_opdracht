@@ -36,7 +36,6 @@ if(isset($_POST["register"])) {
 <br /><br />
 <div class="container" style="width:500px;">
     <h3 align="center">registeer hier nieuwe admins!</h3>
-    <img src="https://cdn.discordapp.com/attachments/289906845773201428/693865970552406096/image0.jpg " width="180" >
     <br />
 
         <h3 align="center">Register</h3>
@@ -46,10 +45,10 @@ if(isset($_POST["register"])) {
             <input type="text" name="username" class="form-control" />
             <br />
             <label> wachtwoord</label>
-            <input type="text" name="password" class="form-control" />
+            <input type="password" name="password" class="form-control" />
             <br />
             <label> verificatiecode</label>
-            <input type="text" name="verification" class="form-control" />
+            <input type="password" name="verification" class="form-control" />
             <br />
             <input type="submit" name="register" value="Register" class="btn btn-info" />
             <br />

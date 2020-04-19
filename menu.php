@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,10 +21,11 @@
 
         <div class="col-*-*"><h1>Menu</h1></div><br>
 <?php if (isset($_SESSION['username'])){
-  echo  "<a href="logout.php">Uitloggen</a><br><br>";
+  echo  "<a href=logout.php>Uitloggen</a><br><br>";
+  echo "<h4>hallo ".$_SESSION['username']."</h4><br>";
 }
 else {
-    echo "<a href="index.php">Inloggen</a><br>";
+    echo "<a href=index.php>Inloggen</a><br>";
 }
 ?>
 
