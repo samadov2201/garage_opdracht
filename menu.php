@@ -19,8 +19,15 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
         <div class="col-*-*"><h1>Menu</h1></div><br>
-            <a href="index.php">Inloggen</a><br>
-            <a href="logout.php">Uitloggen</a><br><br>
+<?php if (isset($_SESSION['username'])){
+  echo  "<a href="logout.php">Uitloggen</a><br><br>";
+}
+else {
+    echo "<a href="index.php">Inloggen</a><br>";
+}
+?>
+
+
 
     <!-- Klanten -->
         <h3>Klant</h3>
