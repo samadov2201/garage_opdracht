@@ -66,7 +66,7 @@ if(isset($_POST["login"]))
             <br />
         </form>
     <h1>doorgaan als klant?</h1>>
-    <br><a href='menu.php'> klik hierop!</a>"
+    <br><a href='menu.php' class="btn btn-info"> klik hierop!</a>"
     <h1> nieuwe admin account aanmaken?</h1>
     <br>
-    <a href="register.php">klik hierop!</a>
+    <a href="register.php" class="btn btn-info">klik hierop!</a>
