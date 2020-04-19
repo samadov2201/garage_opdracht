@@ -12,6 +12,9 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="1XnYcbdNhk6t6pqeOV74pzkrYTT" />
   <component name="ProjectViewState">
@@ -76,6 +79,9 @@
       <workItem from="1586336229347" duration="8666000" />
       <workItem from="1587024631326" duration="1452000" />
       <workItem from="1587041143112" duration="10508000" />
+      <workItem from="1587236705295" duration="6000" />
+      <workItem from="1587236718174" duration="2511000" />
+      <workItem from="1587317125097" duration="7759000" />
     </task>
     <servers />
   </component>
@@ -91,10 +97,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1587046443310" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1587041375320">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="581" y="298" key="com.intellij.ide.util.TipDialog" timestamp="1587317125734">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1587041375320" />
+    <state x="581" y="298" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587317125734" />
     <state x="-6" y="0" width="781" height="830" key="dock-window-1" timestamp="1584005500755">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
