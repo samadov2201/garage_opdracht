@@ -29,7 +29,7 @@ if(isset($_POST["login"]))
 {
     if(empty($_POST["username"]) || empty($_POST["password"]))
     {
-        echo '<script>alert("VULLLL ALLLESS INN!!!")</script>';
+        echo '<script>alert("VUL ALLES IN!")</script>';
     }
     else
     {
@@ -37,26 +37,17 @@ if(isset($_POST["login"]))
         $password = mysqli_real_escape_string($connect, $_POST["password"]);
         $query = "SELECT * FROM login WHERE username = '$username'";
         $result = mysqli_query($connect, $query);
-        if(mysqli_num_rows($result) > 0)
-        {
-            while($row = mysqli_fetch_array($result))
-            {
-                if(password_verify($password, $row["userpass"]))
-                {
+        if(mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_array($result)) {
+                if (password_verify($password, $row["userpass"])) {
                     //return true;
                     $_SESSION["username"] = $username;
                     header("location:menu.php");
-                }
-                else
-                {
+                } else {
                     //return false;
-                    echo 'verkeerd G';
+                    $uitkomst = 'gegevens zijn verkeerd';
                 }
             }
-        }
-        else
-        {
-            echo 'Verkeerd G';
         }
     }
 }
@@ -84,6 +75,10 @@ if(isset($_POST["login"]))
             <br />
             <input type="submit" name="login" value="Login" class="btn btn-info" />
             <br />
+        <?php  if(isset($uitkomst)){
+            echo $uitkomst;
+        }
+        ?>
         </form>
     <h1>doorgaan als klant?</h1>
     <br><a href='menu.php' class="btn btn-info"> klik hierop!</a>
